@@ -15,22 +15,22 @@ export default function Page() {
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
           {/* Left */}
           <div className="max-w-xl text-center md:text-left">
-          <h1 className="text-4xl md:text-6xl font-extrabold leading-tight text-black">
-  Maximize <br />
-  <span className="relative inline-block">
-    <span className="relative z-10 text-black font-extrabold text-4xl md:text-6xl px-2">
-      business
-    </span>
-    <svg
-      className="absolute inset-0 w-full h-full -z-10"
-      viewBox="0 0 220 60"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <ellipse cx="110" cy="30" rx="100" ry="25" stroke="#00C800" strokeWidth="4" fill="none" />
-    </svg>
-  </span>
-  <span className="text-green-600 text-base font-bold"> with</span> efficiency
-</h1>
+            <h1 className="text-4xl md:text-6xl font-extrabold leading-tight text-black">
+              Maximize <br />
+              <span className="relative inline-block">
+                <span className="relative z-10 text-black font-extrabold text-4xl md:text-6xl px-2">
+                  business
+                </span>
+                <svg
+                  className="absolute inset-0 w-full h-full -z-10"
+                  viewBox="0 0 220 60"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <ellipse cx="110" cy="30" rx="100" ry="25" stroke="#00C800" strokeWidth="4" fill="none" />
+                </svg>
+              </span>
+              <span className="text-green-600 text-base font-bold"> with</span> efficiency
+            </h1>
 
             <h2 className="text-green-600 text-4xl md:text-5xl font-bold mt-4">Growvy</h2>
             <p className="text-gray-700 mt-4 text-base md:text-lg">
@@ -48,8 +48,8 @@ export default function Page() {
         </div>
 
         <p className="text-center text-gray-700 text-lg md:text-xl max-w-3xl mx-auto mt-10">
-          “Growvy is built to streamline hiring, optimize assets, and drive business growth. Our mission is to create a tech-driven
-          ecosystem where companies hire smarter, manage resources efficiently, and scale effortlessly.”
+          "Growvy is built to streamline hiring, optimize assets, and drive business growth. Our mission is to create a tech-driven
+          ecosystem where companies hire smarter, manage resources efficiently, and scale effortlessly."
         </p>
       </section>
 
