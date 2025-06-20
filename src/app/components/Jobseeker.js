@@ -1,12 +1,12 @@
 'use client';
 
-import Image from "next/image";
+import Image from 'next/image';
 
 export default function JobSeekerCard({
-  title = "I’m a Job Seeker!",
-  description = "Looking for job according to my skills and requirements.",
-  buttonText = "Jobs",
-  imageSrc = "/job.png",
+  title = "I'm a Job Seeker!",
+  description = 'Looking for a job according to my skills and requirements.',
+  buttonText = 'Jobs',
+  imageSrc = '/job.png',
 }) {
   return (
     <div className="flex flex-col md:flex-row items-center justify-between bg-white p-6 md:p-10 rounded-lg shadow-md md:gap-4">
@@ -27,7 +27,7 @@ export default function JobSeekerCard({
           alt="Job Seeker Illustration"
           width={400}
           height={250}
-          className="w-auto h-44 object-contain"
+          className="h-44 object-contain"
         />
       </div>
     </div>

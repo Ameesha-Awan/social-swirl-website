@@ -1,98 +1,91 @@
-import React from 'react'
-import RecruitmentPlans from '../components/Recuirement'
-import GrowvyFooter from '../components/Footer'
+'use client';
 
-function page() {
+import Image from 'next/image';
+import React from 'react';
+import RecruitmentPlans from '../components/Recuirement';
+import GrowvyFooter from '../components/Footer';
+
+function Page() {
   return (
     <div>
-        <div className="bg-[#e6f7e6] text-center py-12 px-4 rounded-b-[100px] mx-auto shadow-md">
+      {/* Header */}
+      <div className="bg-[#e6f7e6] text-center py-12 px-4 rounded-b-[100px] mx-auto shadow-md">
         <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">Pricing</h2>
         <p className="text-gray-800 max-w-xl mx-auto text-sm md:text-base">
-          ""Discover flexible pricing plans tailored to your needs—start growing with us today!""
+          &quot;Discover flexible pricing plans tailored to your needs—start growing with us today!&quot;
         </p>
       </div>
+
+      {/* Recruitment Solution */}
       <div className="mb-10 px-4 py-12 max-w-7xl mx-auto text-center">
-      <div className="flex justify-center mb-4">
-  <img
-    src="/per.png" // use relative or public path
-    alt="Growth Arrow"
-    className="w-24 md:w-32 h-auto"
-  />
-</div>
-<div >
+        <div className="flex justify-center mb-4">
+          <Image src="/per.png" alt="Recruitment" width={96} height={96} />
+        </div>
         <h2 className="text-4xl font-bold mb-4">Recruitment Solution</h2>
         <p className="text-gray-600 max-w-2xl mx-auto mb-4">
-          "Unlock seamless hiring with our tailored Recruitment Plans—flexible pricing designed to find your perfect talent, fast!"
+          &quot;Unlock seamless hiring with our tailored Recruitment Plans—flexible pricing designed to find your perfect talent, fast!&quot;
         </p>
         <button className="bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-2 rounded-full">
           Plans
         </button>
-        </div>
       </div>
+
       <RecruitmentPlans />
+
+      {/* E-commerce Solutions */}
       <div className="mb-10 px-4 py-12 max-w-7xl mx-auto text-center">
-      <div className="flex justify-center mb-4">
-  <img
-    src="/phone1.png" // use relative or public path
-    alt="Growth Arrow"
-    className="w-24 md:w-32 h-auto"
-  />
-</div>
-<div >
+        <div className="flex justify-center mb-4">
+          <Image src="/phone1.png" alt="E-commerce" width={96} height={96} />
+        </div>
         <h2 className="text-4xl font-bold mb-4">E-commerce Solutions</h2>
         <p className="text-gray-600 max-w-2xl mx-auto mb-4">
-        "Boost your online store with our E-commerce Plans—affordable pricing crafted to scale your business effortlessly!"  </p>
+          &quot;Boost your online store with our E-commerce Plans—affordable pricing crafted to scale your business effortlessly!&quot;
+        </p>
         <button className="bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-2 rounded-full">
           Plans
         </button>
+      </div>
+
+      <RecruitmentPlans />
+
+      {/* Business Solutions */}
+      <div className="mb-10 px-4 py-12 max-w-7xl mx-auto text-center">
+        <div className="flex justify-center mb-4">
+          <Image src="/bui.png" alt="Business" width={96} height={96} />
         </div>
-        </div>
-        <RecruitmentPlans />
-        <div className="mb-10 px-4 py-12 max-w-7xl mx-auto text-center">
-      <div className="flex justify-center mb-4">
-  <img
-    src="/bui.png" // use relative or public path
-    alt="Growth Arrow"
-    className="w-24 md:w-32 h-auto"
-  />
-</div>
-<div >
         <h2 className="text-4xl font-bold mb-4">Business Solutions</h2>
         <p className="text-gray-600 max-w-2xl mx-auto mb-4">
-        "Boost your online store with our E-commerce Plans—affordable pricing crafted to scale
-your business effortlessly!</p>  <button className="bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-2 rounded-full">
+          &quot;Boost your operations with our Business Plans—affordable pricing crafted to scale your company effortlessly!&quot;
+        </p>
+        <button className="bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-2 rounded-full">
           Plans
         </button>
-        </div>
-        </div>
-        <RecruitmentPlans />
-        <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
-      {/* Image on the left */}
-        <div style={{ flex: '0 0 auto' }}>
-      <img
-            src="man.png"
-            alt="Growth Arrow"
-            className="w-[500px] md:w-[400px] h-auto m-2"
-          />
       </div>
-        
-      {/* Text on the right */}
-      <div className='text-center md:text-left max-w-md ml-28'>
-      <button className="mt-0 bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-3 rounded-full">
+
+      <RecruitmentPlans />
+
+      {/* Schedule Call Section */}
+      <div className="flex flex-col md:flex-row items-center justify-center gap-8 px-6 py-16">
+        {/* Image */}
+        <div className="w-full md:w-1/2 flex justify-center">
+          <Image src="/man.png" alt="Schedule Call" width={400} height={300} />
+        </div>
+
+        {/* Text */}
+        <div className="text-center md:text-left max-w-md">
+          <button className="bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-3 rounded-full mb-4">
             Schedule Call Now
           </button>
-        <p>
-          Here is some descriptive text that appears on the right side of the image.
-          You can customize this text as needed.
-        </p>
+          <p className="text-gray-700">
+            Let&apos;s connect and explore how Growvy&apos;s solutions can scale your business with tailored strategies and expert support.
+          </p>
+        </div>
       </div>
-    </div>
-    <div>
-      {/* Other page content */}
+
+      {/* Footer */}
       <GrowvyFooter />
     </div>
-    </div>
-  )
+  );
 }
 
-export default page
+export default Page;

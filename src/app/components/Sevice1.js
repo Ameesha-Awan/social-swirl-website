@@ -19,7 +19,9 @@ export default function ServicesSection() {
         {/* Hiring Card */}
         <div className="flex flex-col items-center">
           <div className="bg-white p-4 md:p-6 rounded-lg border border-black text-center shadow-md max-w-xs w-full">
-            <Image src="/per.png" alt="Hiring" width={80} height={80} className="mx-auto mb-3" />
+            <div className="w-20 h-20 mx-auto mb-3 relative">
+              <Image src="/per.png" alt="Hiring" fill style={{ objectFit: 'contain' }} />
+            </div>
             <h3 className="font-bold text-black mb-2 text-lg">Hiring</h3>
             <p className="text-gray-700 mb-2 text-sm">
               Access a vast talent pool to hire the right candidates quickly and affordably.
@@ -33,7 +35,9 @@ export default function ServicesSection() {
         {/* E-commerce Card */}
         <div className="flex flex-col items-center">
           <div className="bg-white p-4 md:p-6 rounded-lg border border-black text-center shadow-md max-w-xs w-full">
-            <Image src="/phone1.png" alt="E-commerce" width={80} height={80} className="mx-auto mb-3" />
+            <div className="w-20 h-20 mx-auto mb-3 relative">
+              <Image src="/phone1.png" alt="E-commerce" fill style={{ objectFit: 'contain' }} />
+            </div>
             <h3 className="font-bold text-black mb-2 text-lg">E-commerce</h3>
             <p className="text-gray-700 mb-2 text-sm">
               Drive expansion with targeted strategies and market-driven solutions.
@@ -47,7 +51,9 @@ export default function ServicesSection() {
         {/* Business Card */}
         <div className="flex flex-col items-center">
           <div className="bg-white p-4 md:p-6 rounded-lg border border-black text-center shadow-md max-w-xs w-full">
-            <Image src="/bui.png" alt="Business" width={80} height={80} className="mx-auto mb-3" />
+            <div className="w-20 h-20 mx-auto mb-3 relative">
+              <Image src="/bui.png" alt="Business" fill style={{ objectFit: 'contain' }} />
+            </div>
             <h3 className="font-bold text-black mb-2 text-lg">Business</h3>
             <p className="text-gray-700 mb-2 text-sm">
               Optimize and manage business resources with data-backed insights.

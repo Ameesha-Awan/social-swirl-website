@@ -2,7 +2,7 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn, FaStar } from "react-icons/fa";
 
 export default function GrowvyFooter() {
   return (
-    <div className="flex flex-col md:flex-row justify-between items-center gap-6 bg-white p-8">
+    <footer className="flex flex-col md:flex-row justify-between items-center gap-6 bg-white p-8 border-t border-gray-200">
       {/* Left Section */}
       <div className="flex flex-col items-start max-w-sm text-center md:text-left">
         <h1 className="text-3xl font-bold text-black mb-2">Growvy</h1>
@@ -11,9 +11,9 @@ export default function GrowvyFooter() {
           and cutting-edge solutions to boost sales and efficiency with Growvy!
         </p>
         <div className="flex space-x-4">
-          <a href="#" className="text-blue-600 text-2xl"><FaFacebookF /></a>
-          <a href="#" className="text-pink-500 text-2xl"><FaInstagram /></a>
-          <a href="#" className="text-blue-700 text-2xl"><FaLinkedinIn /></a>
+          <a href="#" aria-label="Facebook" className="text-blue-600 text-2xl hover:scale-110 transition"><FaFacebookF /></a>
+          <a href="#" aria-label="Instagram" className="text-pink-500 text-2xl hover:scale-110 transition"><FaInstagram /></a>
+          <a href="#" aria-label="LinkedIn" className="text-blue-700 text-2xl hover:scale-110 transition"><FaLinkedinIn /></a>
         </div>
       </div>
 
@@ -28,15 +28,15 @@ export default function GrowvyFooter() {
           <li>• Jobs</li>
         </ul>
         <div className="flex mt-4 justify-center md:justify-start text-green-500">
-          {Array(5).fill(0).map((_, i) => (
+          {Array.from({ length: 5 }).map((_, i) => (
             <FaStar key={i} />
           ))}
         </div>
       </div>
 
-      {/* Right Section */}
-      <div>
-        <svg width="80" height="80" viewBox="0 0 100 100" fill="none">
+      {/* Right Section – Green Line Graph */}
+      <div className="mt-4 md:mt-0">
+        <svg width="80" height="80" viewBox="0 0 100 100" fill="none" aria-hidden="true">
           <path
             d="M10 90 L40 50 L60 65 L85 30"
             stroke="#00C400"
@@ -46,6 +46,6 @@ export default function GrowvyFooter() {
           <polygon points="85,30 92,38 88,22" fill="#00C400" />
         </svg>
       </div>
-    </div>
+    </footer>
   );
 }

@@ -1,5 +1,7 @@
 // app/page.jsx or pages/index.jsx
+'use client';
 import React from 'react';
+import Image from 'next/image';
 import Navbar from './components/Navbar';
 import JobSeekerCard from './components/Jobseeker';
 import Employee from './components/Employee';
@@ -43,13 +45,13 @@ export default function Page() {
 
           {/* Right Image */}
           <div className="w-full md:w-1/2 flex justify-center">
-            <img src="/gro.png" alt="Growth Arrow" className="w-[300px] md:w-[400px] h-auto" />
+            <Image src="/gro.png" alt="Growth Arrow" width={400} height={300} />
           </div>
         </div>
 
         <p className="text-center text-gray-700 text-lg md:text-xl max-w-3xl mx-auto mt-10">
-          "Growvy is built to streamline hiring, optimize assets, and drive business growth. Our mission is to create a tech-driven
-          ecosystem where companies hire smarter, manage resources efficiently, and scale effortlessly."
+          &quot;Growvy is built to streamline hiring, optimize assets, and drive business growth. Our mission is to create a tech-driven
+          ecosystem where companies hire smarter, manage resources efficiently, and scale effortlessly.&quot;
         </p>
       </section>
 
@@ -57,25 +59,25 @@ export default function Page() {
       <section className="px-4 py-16">
         <div className="flex flex-wrap justify-center gap-8">
           <JobSeekerCard
-            title="I’m a Job Seeker!"
+            title="I&apos;m a Job Seeker!"
             description="Looking for job according to my skills and requirements."
             buttonText="Jobs"
             imageSrc="/job.png"
           />
           <Employee
-            title="I’m an Employer!"
+            title="I&apos;m an Employer!"
             description="Looking for talented candidates for my company."
             buttonText="Post a job"
             imageSrc="/emp.png"
           />
           <JobSeekerCard
-            title="I’m a E-commerce Store!"
+            title="I&apos;m a E-commerce Store!"
             description="Looking for potential sales data for sales campaign."
             buttonText="Sales Data"
             imageSrc="/store.png"
           />
           <Employee
-            title="I’m Business!"
+            title="I&apos;m Business!"
             description="Looking for CRM or Data resources to boost my business."
             buttonText="Business Plans"
             imageSrc="/bui.png"
@@ -85,7 +87,7 @@ export default function Page() {
         {/* Join Community */}
         <div className="flex flex-col items-center text-center max-w-lg mx-auto mt-16">
           <h2 className="font-bold text-3xl md:text-4xl mb-4">
-            Join Growvy’s 50M+ Job Seeker Community & Get Hired Faster!
+            Join Growvy&apos;s 50M+ Job Seeker Community &amp; Get Hired Faster!
           </h2>
           <p className="text-md md:text-lg text-gray-700 mb-8 leading-relaxed">
             Build your profile, get noticed by top employers, and access exclusive job opportunities tailored to your skills.
@@ -109,13 +111,13 @@ export default function Page() {
 
       {/* Schedule Call Section */}
       <section className="flex flex-col md:flex-row items-center justify-center gap-10 py-16 px-4 bg-white">
-        <img src="/man.png" alt="Schedule Call" className="w-[300px] md:w-[400px] h-auto" />
+        <Image src="/man.png" alt="Schedule Call" width={400} height={300} />
         <div className="text-center md:text-left max-w-md">
           <button className="bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-3 rounded-full mb-4">
             Schedule Call Now
           </button>
           <p className="text-gray-700 text-base md:text-lg">
-            Let's connect and discover how Growvy can scale your company through our personalized solutions and data-driven strategies.
+            Let&apos;s connect and discover how Growvy can scale your company through our personalized solutions and data-driven strategies.
           </p>
         </div>
       </section>

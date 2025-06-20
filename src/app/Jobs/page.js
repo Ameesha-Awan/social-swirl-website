@@ -1,24 +1,26 @@
+'use client';
+
 import React from 'react';
 import JobSeekerCard from '../components/Jobseeker';
 import GrowvyFooter from '../components/Footer';
+
 function Page() {
   const jobs = [
-    "Business Developer",
-    "Finance Manager",
-    "Human Resource Manager",
-    "Software Engineer",
-    "Web Developer",
-    "Graphic Designer / Ui / Ux",
-    "SEO Expert",
-    "Android Developer",
-    "Floor Manager",
-     'Sales Representative',
-     'Data Entry Operator',
-     'Deliver man',
-     'Urdu / English Call Center Agent',
-     'Morning Shift Jobs for Females',
-     'Accountant'
-
+    'Business Developer',
+    'Finance Manager',
+    'Human Resource Manager',
+    'Software Engineer',
+    'Web Developer',
+    'Graphic Designer / Ui / Ux',
+    'SEO Expert',
+    'Android Developer',
+    'Floor Manager',
+    'Sales Representative',
+    'Data Entry Operator',
+    'Deliver man',
+    'Urdu / English Call Center Agent',
+    'Morning Shift Jobs for Females',
+    'Accountant',
   ];
 
   return (
@@ -27,7 +29,7 @@ function Page() {
       <div className="bg-[#e6f7e6] text-center py-12 px-4 rounded-b-[100px] mx-auto shadow-md">
         <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">Jobs</h2>
         <p className="text-gray-800 max-w-xl mx-auto text-sm md:text-base">
-          "Join our team and shape the future—explore exciting career opportunities today!"
+          &quot;Join our team and shape the future—explore exciting career opportunities today!&quot;
         </p>
       </div>
 
@@ -47,10 +49,10 @@ function Page() {
       {/* Secondary Buttons */}
       <div className="flex justify-center gap-8 mt-6">
         <button className="bg-white border hover:bg-green-700 border-black font-semibold py-2 px-6 rounded-full transition">
-          Marketing & Sales
+          Marketing &amp; Sales
         </button>
         <button className="bg-white border hover:bg-green-700 border-black font-semibold py-2 px-6 rounded-full transition">
-          Account & Finance
+          Account &amp; Finance
         </button>
         <button className="bg-white border hover:bg-green-700 border-black font-semibold py-2 px-6 rounded-full transition">
           Customer Services
@@ -60,7 +62,7 @@ function Page() {
       {/* Sign In Section */}
       <div className="flex flex-col items-center text-center max-w-lg mx-auto pt-16 px-4">
         <h2 className="font-bold text-4xl mb-4">
-          Join Growvy’s 50M+ Job Seeker Community & Get Hired Faster!
+          Join Growvy&apos;s 50M+ Job Seeker Community &amp; Get Hired Faster!
         </h2>
         <p className="text-lg text-gray-700 mt-2 mb-8 leading-relaxed">
           Build your profile, get noticed by top employers, and access exclusive job opportunities tailored to your skills. Your next career move starts here!
@@ -87,17 +89,17 @@ function Page() {
           ))}
         </div>
       </div>
+
       <JobSeekerCard
-          title="I’m a Job Seeker!"
-          description="Looking for job according to my skills and requirements."
-          buttonText="Jobs"
-          imageSrc="/job.png"
-        />
-        <div>
-      {/* Other page content */}
+        title="I&apos;m a Job Seeker!"
+        description="Looking for job according to my skills and requirements."
+        buttonText="Jobs"
+        imageSrc="/job.png"
+      />
+
+      {/* Footer */}
       <GrowvyFooter />
     </div>
-      </div>
   );
 }
 

@@ -3,23 +3,24 @@
 import Image from "next/image";
 
 export default function Employee({
-  title = "I’m an Employer!",
-  description = "Looking for talented candidates for my company. ",
+  title = "I&apos;m an Employer!",
+  description = "Looking for talented candidates for my company.",
   buttonText = "Post a job",
   imageSrc = "/emp.png",
 }) {
   return (
     <div className="flex flex-col md:flex-row items-center justify-between bg-white p-3 md:p-10 rounded-lg shadow-md">
       
-      {/* Image - now first */}
-      <div className="mb-6 md:mb-0 md:mr-2"> 
-        <Image
-          src={imageSrc}
-          alt="Employer Illustration"
-          width={200}
-          height={200}
-          className="w-auto h-48 object-contain"
-        />
+      {/* Image Section */}
+      <div className="mb-6 md:mb-0 md:mr-2">
+        <div className="w-[200px] h-[200px] relative">
+          <Image
+            src={imageSrc}
+            alt="Employer Illustration"
+            fill
+            style={{ objectFit: 'contain' }}
+          />
+        </div>
       </div>
 
       {/* Text Content */}
