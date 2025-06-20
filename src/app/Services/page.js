@@ -1,4 +1,6 @@
+'use client';
 import React from 'react';
+import Image from 'next/image';
 import ServicesSection from '../components/Sevice1';
 import JobSeekerCard from '../components/Jobseeker';
 import Employee from '../components/Employee';
@@ -51,11 +53,13 @@ function Service() {
 
       {/* Call to Action Section */}
       <div className="flex flex-col md:flex-row items-center justify-center gap-8 px-6 py-12">
-        {/* Image */}
+        {/* ✅ Fixed: Using next/image instead of <img> */}
         <div>
-          <img
+          <Image
             src="/man.png"
             alt="Growth Arrow"
+            width={400}
+            height={300}
             className="w-[400px] h-auto"
           />
         </div>
@@ -66,7 +70,7 @@ function Service() {
             Schedule Call Now
           </button>
           <p className="text-gray-700">
-            Let's connect and explore how Growvy can solve your hiring and business challenges. Our team is ready to help you scale.
+            Let&apos;s connect and explore how Growvy can solve your hiring and business challenges. Our team is ready to help you scale.
           </p>
         </div>
       </div>
