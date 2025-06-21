@@ -6,7 +6,7 @@ export default function ServicesSection() {
     <div className="pb-12">
       {/* Blue curved Services header */}
       <div className="relative">
-        <div className="bg-[#e6f7e6] text-center py-12 px-4 rounded-b-[100px] mx-auto shadow-md">
+        <div className="bg-[#e6f7e6] text-center py-12 px-4 mt-2 rounded-b-[100px] mx-auto shadow-md">
           <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">Services</h2>
           <p className="text-gray-800 max-w-xl mx-auto text-sm md:text-base">
             At Growvy, we provide innovative, cost-effective solutions to help businesses and professionals thrive.

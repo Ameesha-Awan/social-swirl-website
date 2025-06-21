@@ -1,13 +1,15 @@
 import React from "react";
 import Image from "next/image";
+import Navbar from "../components/Navbar";
 import CommunitySection from "../components/Community";
 import GrowvyFooter from "../components/Footer";
 
 export default function Page() {
   return (
     <div>
+      <Navbar />
       {/* Header Section */}
-      <div className="bg-[#e6f7e6] text-center py-12 px-4 rounded-b-[100px] mx-auto shadow-md">
+      <div className="bg-[#e6f7e6] text-center py-12 px-4 mt-2 rounded-b-[100px] mx-auto shadow-md">
         <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">Success</h2>
         <p className="text-gray-800 max-w-xl mx-auto text-sm md:text-base">
           Discover inspiring Success Stories—see how our solutions empower businesses to thrive!

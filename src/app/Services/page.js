@@ -1,6 +1,7 @@
 'use client';
 import React from 'react';
 import Image from 'next/image';
+import Navbar from '../components/Navbar';
 import ServicesSection from '../components/Sevice1';
 import JobSeekerCard from '../components/Jobseeker';
 import Employee from '../components/Employee';
@@ -9,10 +10,11 @@ import GrowvyFooter from '../components/Footer';
 function Service() {
   return (
     <div>
+      <Navbar />
       <ServicesSection />
 
       {/* CTA Section */}
-      <div className="text-center py-12">
+      <div className="text-center mt-2 py-12">
         <h2 className="text-4xl font-extrabold mb-4">Join over 10k users worldwide</h2>
         <button className="bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-3 rounded-full">
           View Pricing

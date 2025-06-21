@@ -1,7 +1,5 @@
 'use client';
-
 import Image from 'next/image';
-
 export default function JobSeekerCard({
   title = "I'm a Job Seeker!",
   description = 'Looking for a job according to my skills and requirements.',

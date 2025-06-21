@@ -4,7 +4,7 @@ import Link from 'next/link';
 export default function Navbar() {
   return (
     <nav className="border-2 border-black rounded-full px-6 py-3 w-fit mx-auto mt-6 bg-white shadow-sm">
-      <ul className="flex space-x-6 font-bold text-black">
+      <ul className="flex space-x-6 font-bold text-black ">
         <li>
           <Link href="/">Home</Link>
         </li>

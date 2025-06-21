@@ -1,5 +1,5 @@
 'use client';
-
+import Navbar from '../components/Navbar';
 import React from 'react';
 import JobSeekerCard from '../components/Jobseeker';
 import GrowvyFooter from '../components/Footer';
@@ -25,8 +25,9 @@ function Page() {
 
   return (
     <div className="relative">
+       <Navbar />
       {/* Hero Section */}
-      <div className="bg-[#e6f7e6] text-center py-12 px-4 rounded-b-[100px] mx-auto shadow-md">
+      <div className="bg-[#e6f7e6] mt-2 text-center py-12 px-4 rounded-b-[100px] mx-auto shadow-md">
         <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">Jobs</h2>
         <p className="text-gray-800 max-w-xl mx-auto text-sm md:text-base">
           &quot;Join our team and shape the future—explore exciting career opportunities today!&quot;

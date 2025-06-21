@@ -2,14 +2,16 @@
 
 import Image from 'next/image';
 import React from 'react';
+import Navbar from '../components/Navbar';
 import RecruitmentPlans from '../components/Recuirement';
 import GrowvyFooter from '../components/Footer';
 
 function Page() {
   return (
     <div>
+      <Navbar />
       {/* Header */}
-      <div className="bg-[#e6f7e6] text-center py-12 px-4 rounded-b-[100px] mx-auto shadow-md">
+      <div className="bg-[#e6f7e6] text-center py-12 mt-2 px-4 rounded-b-[100px] mx-auto shadow-md">
         <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">Pricing</h2>
         <p className="text-gray-800 max-w-xl mx-auto text-sm md:text-base">
           &quot;Discover flexible pricing plans tailored to your needs—start growing with us today!&quot;
